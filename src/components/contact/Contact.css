@@ -1,0 +1,54 @@
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 10rem;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+textarea{
+    height: 4rem !important;
+}
+.s-blur1{
+    background: #ABF1FF94;
+    top: 1rem;
+    left: 8rem;
+}
+.c-blur1{
+    background: var(--purple);
+}
+.t-contact {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+} 
+.t-contact > span {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.icon {
+    margin-right: 8px;
+}
+  
