@@ -10,6 +10,8 @@ import {
 import { BsCodeSlash } from 'react-icons/bs'
 
 import { themeContext } from '../../Context'
+import { motion } from "framer-motion"
+import {Link} from 'react-scroll'
 
 const Works = () => {
   const theme = useContext(themeContext)
@@ -21,15 +23,25 @@ const Works = () => {
         <span style={{color: darkMode? 'white': ''}}>Works for All these</span>
         <span>Brands & Clients</span>
         <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
-            Possimus repellendus voluptatem molestiae. Ut natus enim beatae ullam?
+          HTML, CSS, dan JavaScript adalah fondasi web. HTML menyusun struktur,<br/> 
+          CSS mengaturtampilan, dan JavaScript memberikan interaktivitas, <br/>
+          menciptakan pengalaman web yangdinamis dan menarik. <br/>
+          Dalam sinergi, mereka memungkinkan pengembang untuk menciptakan <br/>
+          situs web yang informatif, estetis, dan berfungsi dengan baik.
         </span>
-        <button className='button s-button'>Hire Me</button>
+        <Link to='Contact' smooth={true} spy={true}>
+          <button className='button s-button'>Hire Me</button>
+        </Link>
         <div className="blur s-blur1"></div>
       </div>
 
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div 
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 2, type: "spring" }}
+          className="w-mainCircle">
             <div className="w-secCircle">
                 <BiLogoReact size={80} color='#00D8FF'/>
             </div>
@@ -45,7 +57,7 @@ const Works = () => {
             <div className="w-secCircle">
                 <BiLogoJavascript size={80} color='#F7DF1E'/>
             </div>
-        </div>
+        </motion.div>
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
       </div>

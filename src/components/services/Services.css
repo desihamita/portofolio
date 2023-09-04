@@ -4,7 +4,7 @@
     height: 120vh;
     margin-bottom: 8rem;
     margin-top: 9rem;
-    margin-bottom: 13 rem;
+    margin-bottom: 13rem;
 }
 .awesome {
     display: flex;
@@ -57,4 +57,23 @@
     background: #ABF1FF84;
     top: 13rem;
     left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: 66rem;
+      padding: 0;
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 17rem;
+    }
+    .cards > * {
+      position: static;
+    }
 }
